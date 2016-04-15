@@ -1,0 +1,39 @@
+/**
+ * 绿色颜色样式
+ * Created by shiyuan on 2015/5/13.
+ */
+.calendar {
+	border-color: #3BC42F;
+}
+
+.calendar_header {
+	background: #3BC42F;
+}
+
+.calendar_header .calendar_nav {
+	border-color: #3BC42F;
+}
+
+.calendar_header .calendar_nav:hover {
+	border-color: #3BC42F; color: #3BC42F;
+}
+
+.calendar_body ul li:hover {
+	border-color: #3BC42F;
+}
+
+.calendar_body ul li.selected {
+	background-color: #3BC42F; border-color: #3BC42F;
+}
+
+.calendar_body ul li.selected:hover {
+	background-color: #3BC42F;
+}
+
+.calendar_btn {
+	background-image: url(../image/icon_green.png);
+}
+
+.calendar_inputBox {
+	border-color: #3BC42F;
+}

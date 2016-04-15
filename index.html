@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+        <meta content="描述" name="description"/>
+        <meta content="关键字" name="keywords"/>
+        <title>
+            日期选择控件示例
+        </title>
+        <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+        </script>
+        <link href="assets/date.pick.css" rel="stylesheet"/>
+        <script src="assets/date.pick.js">
+        </script>
+    </head>
+    <body>
+        <section class="background" id="gameBefore">
+            <label>
+                日期选择：
+            </label>
+            <select onchange="selectType(event)">
+                <option value="day">
+                    天
+                </option>
+                <option value="week">
+                    周
+                </option>
+                <option value="month">
+                    月
+                </option>
+            </select>
+            <input id="dateVal" readonly="true" type="text"/>
+        </section>
+        <script type="text/javascript">
+            $(function(){
+                initDatePicker();
+            });
+            var initDatePicker = function(){
+                $("#dateVal").datePicker('init',{
+                    theme:'green'
+                }).datePicker('setType', 'day');
+            }, selectType = function(event){
+                $("#dateVal").datePicker('setType', event.target.value);
+            };
+        </script>
+    </body>
+</html>

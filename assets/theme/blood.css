@@ -1,0 +1,39 @@
+/**
+ * 血红颜色样式
+ * Created by shiyuan on 2015/5/13.
+ */
+.calendar {
+	border-color: #E12323;
+}
+
+.calendar_header {
+	background: #E12323;
+}
+
+.calendar_header .calendar_nav {
+	border-color: #E12323;
+}
+
+.calendar_header .calendar_nav:hover {
+	border-color: #E12323; color: #E12323;
+}
+
+.calendar_body ul li:hover {
+	border-color: #E12323;
+}
+
+.calendar_body ul li.selected {
+	background-color: #E12323; border-color: #E12323;
+}
+
+.calendar_body ul li.selected:hover {
+	background-color: #E12323;
+}
+
+.calendar_btn {
+	background-image: url(../image/icon_red.png);
+}
+
+.calendar_inputBox {
+	border-color: #E12323;
+}
